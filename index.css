@@ -1,0 +1,178 @@
+.silos {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  min-height: 600px;
+}
+
+.naziv-kapacitet-kontejner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.naziv-kapacitet-kontejner h1 {
+  font-weight: bold;
+}
+
+.naziv-kapacitet-kontejner h1:hover {
+  color: blue;
+}
+
+.vizuelno {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column-reverse;
+  flex: 10;
+  width: 100%;
+}
+
+.popuna {
+  background-color: blueviolet;
+  display: flex;
+}
+
+.fabrika {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  height: min-content;
+}
+
+.levi-deo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.svi-silosi {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  padding-left: 30px;
+  flex-wrap: wrap;
+}
+
+.fabrika-ime {
+  text-align: center;
+  cursor: pointer;
+}
+
+.desni-deo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 6px;
+  padding-right: 20px;
+  margin-top: 55px;
+}
+
+.forma {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  border-bottom: 2px solid blue;
+  padding-bottom: 20px;
+  height: 170px;
+  width: 100%;
+}
+
+.forma h2 {
+  margin: 0px;
+  font-size: 21px;
+  width: 30%;
+}
+
+.red-u-formi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  width: 20%;
+}
+
+.dugme-kolicina {
+  height: 50px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 150px;
+}
+
+.dugme-kolicina:hover {
+  background-color: rgba(106, 106, 231, 0.79);
+  color: white;
+}
+
+.labela-input-text {
+  gap: 20px;
+}
+
+.labela-input-text input {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .forma {
+    flex-direction: column;
+    font-size: 14px;
+    align-items: center;
+    padding-bottom: 12px;
+    height: 207px;
+  }
+
+  .dugme-kolicina {
+    margin-top: 2px;
+    padding: 0px;
+  }
+
+  .forma h2 {
+    font-size: 16px;
+    width: 50%;
+  }
+
+  .naziv-kapacitet-kontejner {
+    width: 80%;
+    align-items: center;
+  }
+
+  .svi-silosi {
+    width: 80%;
+  }
+
+  .red-u-formi {
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+
+  .red-u-formi input {
+    width: 30%;
+  }
+
+  .desni-deo {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .forma {
+    align-items: flex-start;
+  }
+
+  .red-u-formi {
+    justify-content: flex-start;
+  }
+
+  .red-u-formi input {
+    width: 70px;
+  }
+}
